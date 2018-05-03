@@ -3,10 +3,11 @@
 
 set -e
 
-# get framework path from command line or use the current working directory as the path
+# get framework path from command line or use the current working directory as the path.Replace EXTERNAL_FRAMEWORK_NAME with
+# the name of the corresponding framework.
 
 if [ $# -eq 0 ] ; then		
-FRAMEWORK_PATH=$(pwd)/Razorpay.framework/
+FRAMEWORK_PATH=$(pwd)/EXTERNAL_FRAMEWORK_NAME.framework/
 echo "Using the current working directory as the framework path which is $FRAMEWORK_PATH"
 else
 FRAMEWORK_PATH=$1
