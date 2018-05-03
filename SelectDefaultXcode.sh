@@ -1,3 +1,4 @@
+
 # to make sure that any command that fails in turn return a non zero status and does not continue further
 
 set -e
@@ -23,3 +24,4 @@ read -ra ARRAY <<< "$DEFAULT_XCODE_PATH"
 XCODE_COMPONENT=${ARRAY[2]}
 STRING_TO_BE_REPLACED="Xcode.app"
 sed -i '' "s/$STRING_TO_BE_REPLACED/$XCODE_COMPONENT/g" module.modulemap
+
