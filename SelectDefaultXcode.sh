@@ -23,6 +23,9 @@ DEFAULT_XCODE_PATH="$(xcode-select -p)"
 IFS='/'
 read -ra ARRAY <<< "$DEFAULT_XCODE_PATH"
 XCODE_COMPONENT=${ARRAY[2]}
+
+# i have specified a default string to be replaced , you have to change it based on your requirement.
+
 STRING_TO_BE_REPLACED="Xcode.app"
 sed -i '' "s/$STRING_TO_BE_REPLACED/$XCODE_COMPONENT/g" module.modulemap
 
