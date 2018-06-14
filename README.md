@@ -7,7 +7,7 @@ a repo that contains shell scripts that help in iOS development
 
 #### Info
 
-This script is used to modify the xcode version in a module map embedded in a framework.This script is useful when you work with thrid party frameworks that have their own internal module maps but when your xcode version is not in sync with theirs. for eg their module map contain Xcode.app but your default Xcode may be named as Xcode9.3 on your mac.
+This script is used to modify the xcode version in a module map embedded in a framework.This script is useful when you work with third party frameworks that have their own internal module maps but when your xcode version is not in sync with theirs. for eg their module map contain Xcode.app but your default Xcode may be named as Xcode9.3 on your mac.
 
 #### Usage :-
 
